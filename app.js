@@ -11,8 +11,9 @@ let DB = require('./config/db')
 //point Mongoose to DB URI 
 mongoose.connect(DB.URi);
 
+
 let mongoDb = mongoose.connection; 
-mongoDb.on('error', console.error.bind(console, "Connection Error"));
+mongoDb.on('error', console.error.bind(console, 'Connection Error'));
 mongoDb.once('open', ()=> {
 
   console.log("Connected to mongo Db....");
@@ -20,7 +21,7 @@ mongoDb.once('open', ()=> {
 
 let indexRouter = require('./routes/index');
 
-let contactRouter = require('./route/contacts/');
+let contactRouter = require('./routes/contact');
 
 let app = express();
 
