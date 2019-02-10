@@ -1,7 +1,7 @@
 module.exports = {
 
-    "URi":"mongodb://localhost/first"
-    //"URi":"mongodb://<dbuser>:<dbpassword>@ds050739.mlab.com:50739/comp308-w2019"
+    //"URI" : "mongodb://localhost/GabeN"
+    "URI":"mongodb://Tom:a123456@ds060977.mlab.com:60977/gabenorman"
 
     
 }

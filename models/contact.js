@@ -3,15 +3,16 @@ let mongoose = require('mongoose');
 //create a model class 
 
 let contactSchema = mongoose.Schema({
-    firstName: String, 
-    lastName: String, 
-    age: Number}
+
+    name: String, 
+    description: String 
+    }
     , 
 
     {
 
-        Collection: "first"
+        collection: "favoritethings"
     }
 ); 
 
-module.exports = mongoose.model("test", contactSchema);
+module.exports = mongoose.model('gabenorman', contactSchema);
