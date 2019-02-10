@@ -15,7 +15,7 @@ router.get('/', (req, res, next) =>{
           // console.log(contactList);
 
            res.render('contacts/index', {
-                title: 'Contact List',
+                title: 'Favorite Things',
                 contactList: contactList
             }); 
             
